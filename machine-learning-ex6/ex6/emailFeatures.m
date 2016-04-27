@@ -6,11 +6,8 @@ function x = emailFeatures(word_indices)
 
 % Total number of words in the dictionary
 n = 1899;
-
-% You need to return the following variables correctly.
 x = zeros(n, 1);
 
-% ====================== YOUR CODE HERE ======================
 % Instructions: Fill in this function to return a feature vector for the
 %               given email (word_indices). To help make it easier to 
 %               process the emails, we have have already pre-processed each
@@ -45,17 +42,9 @@ x = zeros(n, 1);
 %              vector should look like:
 %
 %              x = [ 0 0 0 0 1 0 0 0 ... 0 0 0 0 1 ... 0 0 0 1 0 ..];
-%
-%
 
-
-
-
-
-
-
-
-% =========================================================================
-    
+for i=1:length(word_indices)
+    x(word_indices(i)) = 1;
+end
 
 end
